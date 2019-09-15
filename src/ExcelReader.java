@@ -21,7 +21,7 @@ public class ExcelReader {
 		FileOutputStream fileOut = null;
 		HSSFWorkbook wb = null;
 		try {
-			fileIn = new FileInputStream("/Users/radha/Desktop/2.xls");
+			fileIn = new FileInputStream("FilePath");
 			POIFSFileSystem fs = new POIFSFileSystem(fileIn);
 			wb = new HSSFWorkbook(fs);
 			HSSFSheet sheet = wb.getSheetAt(0);
